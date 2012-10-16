@@ -8,8 +8,8 @@ task :rcqa => ["rcqa:default"]
 
 namespace :rcqa do
   SECTIONS = {
-    "units" => {:folders => "app/models|app/helpers|lib"},
-    "functionals" => {:folders => "app/controllers|app/mailers"},
+    "units" => {:folders => ['app/models', 'app/helpers', 'lib']},
+    "functionals" => {:folders => ['app/controllers', 'app/mailers']},
     "integration" => {}
   } 
 
@@ -42,7 +42,9 @@ namespace :rcqa do
         Rcov::RcovTask.new("#{section_name}") do |t|
           t.libs << "test"
           t.test_files = Dir["test/#{section_name.singularize}/**/*_test.rb"]
-          t.rcov_opts = ["--html", "--text-report", "--exclude", "^(?!(#{section[:folders]}))"]
+          rcov_opts = ["--html", "--text-report"]
+          rcov_opts += ["--include-file", section[:folders].join(',')] if section[:folders]
+          t.rcov_opts = rcov_opts
           t.output_dir = "coverage/#{section_name}"
         end
       end
