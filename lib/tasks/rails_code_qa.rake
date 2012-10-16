@@ -42,7 +42,7 @@ namespace :rcqa do
         Rcov::RcovTask.new("#{section_name}") do |t|
           t.libs << "test"
           t.test_files = Dir["test/#{section_name.singularize}/**/*_test.rb"]
-          t.rcov_opts = ["--html", "--text-report", "--exclude '^(?!(#{section[:folders]}))'"]
+          t.rcov_opts = ["--html", "--text-report", "--exclude", "^(?!(#{section[:folders]}))"]
           t.output_dir = "coverage/#{section_name}"
         end
       end
