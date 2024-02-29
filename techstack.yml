@@ -1,0 +1,100 @@
+repo_name: hakanai/rails_code_qa
+report_id: 72269b764f1197d8653856895c6ceb0d
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-29T19:59:45+00:00'
+requested_by: hakanai
+provider: github
+branch: master
+detected_tools_count: 7
+tools:
+- name: Ruby
+  description: A dynamic, interpreted, open source programming language with a focus
+    on simplicity and productivity
+  website_url: https://www.ruby-lang.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source_url: https://github.com/hakanai/rails_code_qa
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/hakanai/rails_code_qa
+  detection_source: Repo Metadata
+- name: RubyGems
+  description: Easily download, install, and use ruby software packages on your system
+  website_url: https://rubygems.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source_url: https://github.com/hakanai/rails_code_qa/blob/master/rails_code_qa.gemspec
+  detection_source: rails_code_qa.gemspec
+  last_updated_by: Nathan Humbert
+  last_updated_on: 2010-02-11 15:25:18.000000000 Z
+- name: flay
+  description: Flay analyzes code for structural similarities
+  package_url: https://rubygems.org/flay
+  version: 1.4.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19099/default_a446ce2f074889d1160eee4b4a2fde34af7525e6.png
+  detection_source_url: https://github.com/hakanai/rails_code_qa/blob/master/rails_code_qa.gemspec
+  detection_source: rails_code_qa.gemspec
+  last_updated_by: Nathan Humbert
+  last_updated_on: 2011-06-19 17:14:36.000000000 Z
+- name: flog
+  description: Flog reports the most tortured code in an easy to read pain report
+  package_url: https://rubygems.org/flog
+  version: 2.5.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19081/default_528919d075158df2886bdbd903f97caf94a9aefb.png
+  detection_source_url: https://github.com/hakanai/rails_code_qa/blob/master/rails_code_qa.gemspec
+  detection_source: rails_code_qa.gemspec
+  last_updated_by: Nathan Humbert
+  last_updated_on: 2011-06-19 17:14:36.000000000 Z
+- name: rcov
+  description: Rcov is a code coverage tool for Ruby
+  package_url: https://rubygems.org/rcov
+  version: 0.9.9
+  license: Other
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18843/default_49e8e438a279d3b7963273823890f9482ce83fb4.png
+  detection_source_url: https://github.com/hakanai/rails_code_qa/blob/master/rails_code_qa.gemspec
+  detection_source: rails_code_qa.gemspec
+  last_updated_by: Nathan Humbert
+  last_updated_on: 2010-09-25 05:54:06.000000000 Z
+- name: simplecov
+  description: Code coverage for Ruby 1.9+ with a powerful configuration library and
+    automatic merging of coverage across test suites
+  package_url: https://rubygems.org/simplecov
+  version: 0.5.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18819/default_6564ae059af6c4ea7065fd2329370c7a05341cf8.png
+  detection_source_url: https://github.com/hakanai/rails_code_qa/blob/master/rails_code_qa.gemspec
+  detection_source: rails_code_qa.gemspec
+  last_updated_by: Nathan Humbert
+  last_updated_on: 2012-01-21 04:43:47.000000000 Z
